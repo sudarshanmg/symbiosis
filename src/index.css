@@ -1,0 +1,16 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 50vw;
+  max-width: 20rem;
+  margin: 1rem;
+  z-index: 2;
+}
