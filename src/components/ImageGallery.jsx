@@ -1,6 +1,7 @@
 import '../styles/ImageGallery.css';
 
 import { useState, useEffect } from 'react';
+import ReactImageAppear from 'react-image-appear';
 
 import Img1 from '../assets/project-images/img1.gif';
 import Img2 from '../assets/project-images/img2.jpg';
@@ -123,12 +124,14 @@ const ImageGallery = () => {
     <div className="image-thumbnails">
       {images.map((img, index) => (
         <div className="image-grid-item" key={index}>
-          <img
+          <ReactImageAppear
             key={index}
             src={img.url}
             alt="Gallery Image"
             className="pic"
             style={{ transform: `scale(${img.zoom})` }}
+            animation="zoomIn"
+            animationDuration="0.5s"
           />
           <div className="image-text">
             <div className="project-name">{img.title}</div>
