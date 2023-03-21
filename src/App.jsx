@@ -1,13 +1,17 @@
 import Header from './components/Header';
 import './App.css';
 import ImageGallery from './components/ImageGallery';
+import Slider from './components/slider/Slider';
 
 function App() {
   return (
-    <div className="main-container">
+    <>
       <Header />
-      <ImageGallery />
-    </div>
+      <div className="main-container">
+        <ImageGallery />
+        {/* <Slider /> */}
+      </div>
+    </>
   );
 }
 
