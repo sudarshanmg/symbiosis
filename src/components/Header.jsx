@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className={classes.header__container}>
       <img src={Logo} alt="logo" className={classes.logo} />
-      <Hamburger
+      {/* <Hamburger
         onClick={() => {
           setModalClicked((prev) => !prev);
         }}
@@ -22,7 +22,7 @@ const Header = () => {
             setModalClicked((prev) => !prev);
           }}
         />
-      )}
+      )} */}
     </div>
   );
 };

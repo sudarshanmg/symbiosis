@@ -14,6 +14,22 @@ const Slider = () => {
     { url: Img5, title: 'An Image' },
   ];
 
+  function importAll(r) {
+    let images = {};
+    r.keys().forEach((item, index) => {
+      images[item.replace('./', '')] = r(item);
+    });
+    return images;
+  }
+  const images = importAll(
+    require.context(
+      '../../assets/project-images/Hotels/Lepakshi',
+      false,
+      /\.(png|jpe?g|svg)$/
+    )
+  );
+  console.log(images);
+
   const containerStyles = {
     width: '100%',
     height: '100%',
