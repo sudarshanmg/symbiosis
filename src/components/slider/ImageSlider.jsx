@@ -45,15 +45,16 @@ const ImageSlider = ({ slides }) => {
 
   const dotContainerStyles = {
     display: 'flex',
+    width: '100%',
     justifyContent: 'center',
     position: 'absolute',
-    transform: 'translate(0, -100%)',
-    left: '50%',
+    bottom: '10px',
   };
   const dotStyles = {
     margib: '0 3px',
     cursor: 'pointer',
     fontSize: '2.5rem',
+    transition: 'all 0.5s ease-in',
   };
   const goToPrev = () => {
     const isFirstSlide = currentIndex === 0;
@@ -84,7 +85,12 @@ const ImageSlider = ({ slides }) => {
       <div style={dotContainerStyles}>
         {slides.map((slide, index) => {
           return (
-            <div key={index} style={dotStyles} onClick={() => goToSlide(index)}>
+            <div
+              key={index}
+              style={dotStyles}
+              className={currentIndex === index ? 'active' : ''}
+              onClick={() => goToSlide(index)}
+            >
               •
             </div>
           );
