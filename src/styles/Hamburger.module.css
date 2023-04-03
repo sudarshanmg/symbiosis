@@ -1,3 +1,9 @@
 .icon__container:hover {
   cursor: pointer;
 }
+@media screen and (max-width: 700px) {
+  svg {
+    width: 2rem;
+    height: 1.5rem;
+  }
+}

@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import Slider from './components/slider/Slider';
 import Rangbhoomi from './routes/Hotels/Rangbhoomi/Slider';
 import Lepakshi from './routes/Hotels/Lepakshi/Slider';
 import KrishnaPalace from './routes/Hotels/Krishna_Palace/Slider';
@@ -15,11 +14,22 @@ import Nom from './routes/Hotels/NOM/Slider';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import Header from './components/Header';
+import ImageGallery from './components/ImageGallery';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <h1>Page not Found!</h1>,
+  },
+  {
+    path: 'projects',
+    element: (
+      <>
+        <Header />
+        <ImageGallery />
+      </>
+    ),
     errorElement: <h1>Page not Found!</h1>,
   },
   {
