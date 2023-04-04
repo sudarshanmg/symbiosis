@@ -7,10 +7,10 @@ import ImageSlider from './ImageSlider';
 
 const Slider = () => {
   const slides = [
-    { url: Img1, title: 'An Image', text: 'Aanandam Designs' },
+    { url: Img4, title: 'An Image', text: 'Aanandam Designs' },
     { url: Img2, title: 'An Image', text: 'analyse. simulate. design.' },
     { url: Img3, title: 'An Image', text: 'creating a sustainable tomorrow' },
-    { url: Img4, title: 'An Image', text: 'amalgamate landscape and built' },
+    { url: Img1, title: 'An Image', text: 'amalgamate landscape and built' },
     { url: Img5, title: 'An Image', text: 'performance driven design' },
   ];
 

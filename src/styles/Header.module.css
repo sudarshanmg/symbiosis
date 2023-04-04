@@ -1,14 +1,24 @@
 .header__container {
   width: 100vw;
   position: fixed;
-  backdrop-filter: blur(5px);
   margin-bottom: 0.2rem;
   top: 0;
   z-index: 4;
-  opacity: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.hamburger {
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 10px;
+  background-color: var(--clr-primary);
+  margin-right: 1rem;
+}
+
+.hamburger:hover {
+  cursor: pointer;
 }
 
 .logo {
@@ -25,5 +35,10 @@
   .logo {
     width: 4rem;
     height: 4rem;
+  }
+
+  .hamburger {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }

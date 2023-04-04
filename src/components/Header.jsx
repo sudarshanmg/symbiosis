@@ -11,7 +11,8 @@ const Header = () => {
   return (
     <div className={classes.header__container}>
       <img src={Logo} alt="logo" className={classes.logo} />
-      <Hamburger
+      <div
+        className={classes.hamburger}
         onClick={() => {
           setModalClicked((prev) => !prev);
         }}

@@ -21,15 +21,14 @@ const ImageSlider = ({ slides }) => {
     flexDirection: 'column',
     justifyContent: 'flex-end',
     alignItems: 'center',
-    paddingBottom: '3rem',
     fontSize: '2.5vw',
-    textAlign: 'center',
     color: '#fff',
   };
 
   const textStyles = {
     width: '100vw',
-    backdropFilter: 'blur(2px)',
+    paddingBottom: '3rem',
+    paddingLeft: '2rem',
   };
 
   const leftArrowStyles = {

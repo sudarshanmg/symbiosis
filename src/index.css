@@ -23,3 +23,11 @@ h1 {
 .active {
   color: white;
 }
+.link {
+  margin-bottom: 0.5rem;
+}
+.link,
+.link h1 {
+  color: white;
+  text-decoration: none;
+}
